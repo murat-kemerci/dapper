@@ -19,13 +19,13 @@ namespace DapperApp.Library1.Queries
 
             return persons;
         }
-        public List<Person> FindPerson(int Id)
+        public Person FindPerson(int Id)
         {
-            List<Person> person = null;
+            Person person = null;
 
             RunCommand((connection) =>
             {
-                person = connection.Query<Person>($"select * from Persons where Persons.Id = {Id} ").ToList();
+                person = connection.QuerySingle<Person>($"select * from Persons where Persons.Id = {Id} ");
             });
 
             return person;

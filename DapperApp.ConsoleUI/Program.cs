@@ -7,7 +7,7 @@ namespace DapperApp.ConsoleUI
     internal class Program
     {
         static PersonQueries personQueries = new PersonQueries();
-        static bool EndProgram = true;
+        static bool RunProgram = true;
         static int PersonId;
         static void Main(string[] args)
         {
@@ -25,34 +25,57 @@ namespace DapperApp.ConsoleUI
                     WritePersonList();
                 else if (choosed == "2")
                 {
-                    Console.Write("Kişinin Id'si: ");
-                    try
+                    do
                     {
-                        PersonId = Convert.ToInt32(Console.ReadLine());
-                        FindPerson(PersonId);
-                    }
-                    catch (Exception)
-                    {
-                        Console.WriteLine("Sayı girişi yapın!");
-                    }
+                        try
+                        {
+                            Console.Write("Kişinin Id'si: ");
+                            PersonId = Convert.ToInt32(Console.ReadLine());
+                            FindPerson(PersonId);
+                            RunProgram = false;
+                        }
+                        catch (Exception)
+                        {
+                            Console.WriteLine("Sayı girişi yapın!");
+                        }
+                    } while (RunProgram);
+                    RunProgram = true;
                 }
                 else if (choosed == "3")
                     CreatePerson();
                 else if (choosed == "4")
                     UpdatePerson();
                 else if (choosed == "5")
-                    DeletePerson();
+                {
+                    WritePersonList();
+                    do
+                    {
+                        try
+                        {
+                            Console.Write("Silinicek Kişinin Id'si: ");
+                            PersonId = Convert.ToInt32(Console.ReadLine());
+                            FindPerson(PersonId);
+                            if (RunProgram)
+                            {
+                                DeletePerson(PersonId);
+                                RunProgram = false;
+                            }
+                        }
+                        catch (Exception )
+                        {
+                            Console.WriteLine("Sayı girişi yapın!");
+                        }
+                    } while (RunProgram);
+                    RunProgram = true;
+                }
                 else if (choosed == "6")
                     FilterPerson();
                 else if (choosed == "7")
-                    EndProgram = false;
+                    RunProgram = false;
                 else
                     Console.WriteLine("Yanlış Seçim, Tekrar Deneyin.");
-
-            } while (EndProgram);
-
+            } while (RunProgram);
         }
-
         static void CreatePerson()
         {
             Person person = new Person();
@@ -74,7 +97,6 @@ namespace DapperApp.ConsoleUI
                     person.Surname);
             }
         }
-
         //Update, Delete methodları yazılacak
         //Find
         static void FindPerson(int PersonId)
@@ -82,61 +104,60 @@ namespace DapperApp.ConsoleUI
             try
             {
                 var Person = personQueries.FindPerson(PersonId);
-                foreach (var person in Person)
-                {
-                    Console.WriteLine("Id = {0}, Adı = {1}, Soyad = {2}",
-                        person.Id,
-                        person.Name,
-                        person.Surname);
-                }
+                Console.WriteLine("Id = {0}, Adı = {1}, Soyad = {2}",
+                    Person.Id,
+                    Person.Name,
+                    Person.Surname);
             }
             catch (Exception)
             {
                 Console.WriteLine("Kişi bulunamadı");
+                RunProgram = false;
             }
-
         }
-
         //Update
         static void UpdatePerson()
         {
-            Console.Write("Güncellenecek Kişinin Id'si: ");
-            try
-            {
-            PersonId = Convert.ToInt32(Console.ReadLine());
-            }
-            catch (Exception)
-            {
-                Console.WriteLine("Yanlış Giriş!");
-            }
-            Console.Write("Yeni Ad: ");
-            string newName = Console.ReadLine();
-            Console.Write("Yeni Soyad: ");
-            string newSurname = Console.ReadLine();
-            personQueries.UpdatePerson(PersonId, newName, newSurname);
+            WritePersonList();
 
             do
             {
-                Console.Write("Kişiyi görüntülemek ister misiniz?: (y/n)");
-                string ans = Console.ReadLine().ToLower();
-                if (ans == "y")
+                try
                 {
+                    Console.Write("Güncellenecek Kişinin Id'si: ");
+                    PersonId = Convert.ToInt32(Console.ReadLine());
                     FindPerson(PersonId);
-                    EndProgram = false;
+                    Console.Write("Yeni Ad: ");
+                    string newName = Console.ReadLine();
+                    Console.Write("Yeni Soyad: ");
+                    string newSurname = Console.ReadLine();
+                    personQueries.UpdatePerson(PersonId, newName, newSurname);
+                    do
+                    {
+                        Console.Write("Kişiyi görüntülemek ister misiniz?: (y/n)");
+                        string ans = Console.ReadLine().ToLower();
+                        if (ans == "y")
+                        {
+                            FindPerson(PersonId);
+                            RunProgram = false;
+                        }
+                        else if (ans == "n")
+                            RunProgram = false;
+                        else
+                            Console.WriteLine("Yanlış Seçim, Tekrar Deneyin.");
+                    } while (RunProgram);
                 }
-                else if (ans == "n")
-                    EndProgram = false;
-                else
-                    Console.WriteLine("Yanlış Seçim, Tekrar Deneyin.");
-            } while (EndProgram);
-            EndProgram = true;
+                catch (Exception)
+                {
+                    Console.WriteLine("Yanlış Giriş!");
+                }
+            } while (RunProgram);
+            RunProgram = true;
+
         }
         //Delete
-        static void DeletePerson()
+        static void DeletePerson(int PersonId)
         {
-            Console.Write("Silinicek Kişinin Id'si: ");
-            PersonId = Convert.ToInt32(Console.ReadLine());
-            FindPerson(PersonId);
             do
             {
                 Console.Write("Kişiyi silemek istediğinize emin misiniz?: (y/n)");
@@ -144,20 +165,19 @@ namespace DapperApp.ConsoleUI
                 if (ans == "y")
                 {
                     personQueries.DeletePerson(PersonId);
-                    EndProgram = false;
+                    RunProgram = false;
                 }
                 else if (ans == "n")
                 {
                     Console.WriteLine("İşem İptal Edildi.");
-                    EndProgram = false;
+                    RunProgram = false;
                 }
                 else
                     Console.WriteLine("Yanlış Seçim, Tekrar Deneyin.");
-            } while (EndProgram);
-            EndProgram = true;
+            } while (RunProgram);
+            RunProgram = true;
 
         }
-
         //Filtreli listeleme yapılabilir (Adı x ile başlayanları listelesin gibi ...)
         static void FilterPerson()
         {
@@ -185,7 +205,7 @@ namespace DapperApp.ConsoleUI
                     }
                     else
                         Console.WriteLine("Kayıt Bulunamadı");
-                    EndProgram = false;
+                    RunProgram = false;
                 }
                 else if (choosed == "2")
                 {
@@ -205,14 +225,14 @@ namespace DapperApp.ConsoleUI
                     }
                     else
                         Console.WriteLine("Kayıt Bulunamadı");
-                    EndProgram = false;
+                    RunProgram = false;
                 }
                 else
                 {
                     Console.WriteLine("Yanlış giriş!");
                 }
-            } while (EndProgram);
-            EndProgram = true;
+            } while (RunProgram);
+            RunProgram = true;
         }
     }
 }

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "5eRhLE0uK8/nfg/VkwIlHxUsIZVCKL7K1zzEUrytxQBoGkC0VZT0Kmm0mRmerZrVPBHBReGwryLlDFMaGfNPCw==",
+  "dgSpecHash": "yUB/2Z67fkDl/P1FxNcJfkok5yNRtQxaMCIOf6YawHxpnCkzoXScV1ilRf51BQWX5mrXwKvV77uL2I+iwLg6fg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Murat Kemerci\\source\\repos\\studies\\samples\\dapper\\DapperApp.Library1\\DapperApp.Library1.csproj",
+  "projectFilePath": "C:\\Users\\Murat Kemerci\\Desktop\\Sampels\\DapperApp.Library1\\DapperApp.Library1.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Murat Kemerci\\.nuget\\packages\\dapper\\2.0.123\\dapper.2.0.123.nupkg.sha512",
     "C:\\Users\\Murat Kemerci\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",

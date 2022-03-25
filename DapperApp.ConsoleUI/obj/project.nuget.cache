@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "pwFAy/OSS/qut+c3IvEp33XL9P+WzPpGXwq+zfuwzZeaO7Hukb1vWXBkCLUSFmmP73AfR/QPcU9KNw8EwVYyyA==",
+  "dgSpecHash": "HdflcDpPkkFRO7pf6t9ka36+qKbFHLC7gHqRxq3grb3lBCaOQGzccpRb9yn8N3qAF8qddm7UVbg/7PLrv5j4Ag==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Murat Kemerci\\source\\repos\\studies\\samples\\dapper\\DapperApp.ConsoleUI\\DapperApp.ConsoleUI.csproj",
+  "projectFilePath": "C:\\Users\\Murat Kemerci\\Desktop\\Sampels\\DapperApp.ConsoleUI\\DapperApp.ConsoleUI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Murat Kemerci\\.nuget\\packages\\dapper\\2.0.123\\dapper.2.0.123.nupkg.sha512",
     "C:\\Users\\Murat Kemerci\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",

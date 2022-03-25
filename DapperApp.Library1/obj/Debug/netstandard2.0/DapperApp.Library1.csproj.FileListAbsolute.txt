@@ -8,3 +8,13 @@ C:\Users\Murat Kemerci\source\repos\studies\samples\dapper\DapperApp.Library1\ob
 C:\Users\Murat Kemerci\source\repos\studies\samples\dapper\DapperApp.Library1\obj\Debug\netstandard2.0\DapperApp.Library1.csproj.CoreCompileInputs.cache
 C:\Users\Murat Kemerci\source\repos\studies\samples\dapper\DapperApp.Library1\obj\Debug\netstandard2.0\DapperApp.Library1.dll
 C:\Users\Murat Kemerci\source\repos\studies\samples\dapper\DapperApp.Library1\obj\Debug\netstandard2.0\DapperApp.Library1.pdb
+C:\Users\Murat Kemerci\Desktop\Sampels\DapperApp.Library1\bin\Debug\netstandard2.0\DapperApp.Library1.deps.json
+C:\Users\Murat Kemerci\Desktop\Sampels\DapperApp.Library1\bin\Debug\netstandard2.0\DapperApp.Library1.dll
+C:\Users\Murat Kemerci\Desktop\Sampels\DapperApp.Library1\bin\Debug\netstandard2.0\DapperApp.Library1.pdb
+C:\Users\Murat Kemerci\Desktop\Sampels\DapperApp.Library1\obj\Debug\netstandard2.0\DapperApp.Library1.csproj.AssemblyReference.cache
+C:\Users\Murat Kemerci\Desktop\Sampels\DapperApp.Library1\obj\Debug\netstandard2.0\DapperApp.Library1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Murat Kemerci\Desktop\Sampels\DapperApp.Library1\obj\Debug\netstandard2.0\DapperApp.Library1.AssemblyInfoInputs.cache
+C:\Users\Murat Kemerci\Desktop\Sampels\DapperApp.Library1\obj\Debug\netstandard2.0\DapperApp.Library1.AssemblyInfo.cs
+C:\Users\Murat Kemerci\Desktop\Sampels\DapperApp.Library1\obj\Debug\netstandard2.0\DapperApp.Library1.csproj.CoreCompileInputs.cache
+C:\Users\Murat Kemerci\Desktop\Sampels\DapperApp.Library1\obj\Debug\netstandard2.0\DapperApp.Library1.dll
+C:\Users\Murat Kemerci\Desktop\Sampels\DapperApp.Library1\obj\Debug\netstandard2.0\DapperApp.Library1.pdb

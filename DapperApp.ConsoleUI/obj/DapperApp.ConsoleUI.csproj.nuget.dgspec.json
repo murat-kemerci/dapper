@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Murat Kemerci\\source\\repos\\studies\\samples\\dapper\\DapperApp.ConsoleUI\\DapperApp.ConsoleUI.csproj": {}
+    "C:\\Users\\Murat Kemerci\\Desktop\\Sampels\\DapperApp.ConsoleUI\\DapperApp.ConsoleUI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Murat Kemerci\\source\\repos\\studies\\samples\\dapper\\DapperApp.ConsoleUI\\DapperApp.ConsoleUI.csproj": {
+    "C:\\Users\\Murat Kemerci\\Desktop\\Sampels\\DapperApp.ConsoleUI\\DapperApp.ConsoleUI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Murat Kemerci\\source\\repos\\studies\\samples\\dapper\\DapperApp.ConsoleUI\\DapperApp.ConsoleUI.csproj",
+        "projectUniqueName": "C:\\Users\\Murat Kemerci\\Desktop\\Sampels\\DapperApp.ConsoleUI\\DapperApp.ConsoleUI.csproj",
         "projectName": "DapperApp.ConsoleUI",
-        "projectPath": "C:\\Users\\Murat Kemerci\\source\\repos\\studies\\samples\\dapper\\DapperApp.ConsoleUI\\DapperApp.ConsoleUI.csproj",
+        "projectPath": "C:\\Users\\Murat Kemerci\\Desktop\\Sampels\\DapperApp.ConsoleUI\\DapperApp.ConsoleUI.csproj",
         "packagesPath": "C:\\Users\\Murat Kemerci\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Murat Kemerci\\source\\repos\\studies\\samples\\dapper\\DapperApp.ConsoleUI\\obj\\",
+        "outputPath": "C:\\Users\\Murat Kemerci\\Desktop\\Sampels\\DapperApp.ConsoleUI\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Murat Kemerci\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -28,8 +28,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\Murat Kemerci\\source\\repos\\studies\\samples\\dapper\\DapperApp.Library1\\DapperApp.Library1.csproj": {
-                "projectPath": "C:\\Users\\Murat Kemerci\\source\\repos\\studies\\samples\\dapper\\DapperApp.Library1\\DapperApp.Library1.csproj"
+              "C:\\Users\\Murat Kemerci\\Desktop\\Sampels\\DapperApp.Library1\\DapperApp.Library1.csproj": {
+                "projectPath": "C:\\Users\\Murat Kemerci\\Desktop\\Sampels\\DapperApp.Library1\\DapperApp.Library1.csproj"
               }
             }
           }
@@ -62,14 +62,14 @@
         }
       }
     },
-    "C:\\Users\\Murat Kemerci\\source\\repos\\studies\\samples\\dapper\\DapperApp.Library1\\DapperApp.Library1.csproj": {
+    "C:\\Users\\Murat Kemerci\\Desktop\\Sampels\\DapperApp.Library1\\DapperApp.Library1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Murat Kemerci\\source\\repos\\studies\\samples\\dapper\\DapperApp.Library1\\DapperApp.Library1.csproj",
+        "projectUniqueName": "C:\\Users\\Murat Kemerci\\Desktop\\Sampels\\DapperApp.Library1\\DapperApp.Library1.csproj",
         "projectName": "DapperApp.Library1",
-        "projectPath": "C:\\Users\\Murat Kemerci\\source\\repos\\studies\\samples\\dapper\\DapperApp.Library1\\DapperApp.Library1.csproj",
+        "projectPath": "C:\\Users\\Murat Kemerci\\Desktop\\Sampels\\DapperApp.Library1\\DapperApp.Library1.csproj",
         "packagesPath": "C:\\Users\\Murat Kemerci\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Murat Kemerci\\source\\repos\\studies\\samples\\dapper\\DapperApp.Library1\\obj\\",
+        "outputPath": "C:\\Users\\Murat Kemerci\\Desktop\\Sampels\\DapperApp.Library1\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Murat Kemerci\\AppData\\Roaming\\NuGet\\NuGet.Config",
